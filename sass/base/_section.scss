@@ -1,0 +1,35 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section_no-padding-top {
+  padding-top: 0;
+}
+
+.section_other-background {
+  background-color: var(--our-team-sec-bg);
+}
+
+.section__title {
+  @include font($fs: 28px, $lh: 33px);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .section_no-padding-top {
+    padding-top: 0;
+  }
+
+  .section__title {
+    @include font($fs: 36px, $lh: 42px);
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
