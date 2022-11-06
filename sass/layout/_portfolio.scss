@@ -135,7 +135,9 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
-    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 

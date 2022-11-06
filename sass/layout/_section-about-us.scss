@@ -6,31 +6,29 @@
   .section_no-padding-top {
     display: block;
   }
- 
-  }
+}
 
-  .specialization {
-    display: flex;
-    column-gap: 30px;
-  }
+.specialization {
+  display: flex;
+  column-gap: 30px;
+}
 
-  .specialization__item {
-    position: relative;
-  }
+.specialization__item {
+  position: relative;
+}
 
-  .specialization__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
+.specialization__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
 
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-  }
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
 }

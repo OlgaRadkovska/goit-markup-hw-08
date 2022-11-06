@@ -35,8 +35,10 @@
     gap: 30px;
   }
   .our-team-list__item {
-    margin: 0;
     flex-basis: 47.96%;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 

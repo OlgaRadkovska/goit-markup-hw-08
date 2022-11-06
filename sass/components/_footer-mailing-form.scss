@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
-  // width: 100%;
 }
 
 .mailing-form__field {
@@ -76,10 +75,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .mailing-form {
-    margin: 0 auto;
-  }
-  .mailing-form__input {
+  .mailing-form__field {
     width: 450px;
   }
 }
@@ -93,6 +89,9 @@
   }
   .mailing-form__capture {
     text-align: left;
+  }
+  .mailing-form__field {
+    width: 358px;
   }
 }
 
