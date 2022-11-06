@@ -76,6 +76,7 @@ img {
   line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -92,6 +93,7 @@ img {
     line-height: 1.1666666667;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
 }
 .container {
@@ -535,7 +537,6 @@ img {
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
-  width: 450px;
 }
 
 .mailing-form__field {
@@ -565,6 +566,7 @@ img {
 }
 
 .mailing-form__capture {
+  display: block;
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -743,7 +745,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  max-width: 480px;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -769,7 +771,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-img-tab.jpg");
   }
 }
@@ -781,7 +782,6 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-img.jpg");
   }
   .hero__title {
@@ -886,7 +886,6 @@ img {
   background-color: var(--bg-page-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-top: 30px;
 }
 
 .our-team-list__description {
@@ -935,7 +934,6 @@ img {
 .client-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
   gap: 30px;
 }
 
@@ -982,7 +980,7 @@ img {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   justify-content: flex-start;
   column-gap: 8px;
 }
@@ -1080,6 +1078,7 @@ img {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .portfolio {
     display: flex;
@@ -1097,6 +1096,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
   .portfolio__item {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -1115,12 +1117,12 @@ img {
 
 .footer__contacts {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .address {
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .address-list__item:not(:last-child) {
@@ -1141,7 +1143,7 @@ img {
   color: var(--bg-page-color);
 }
 
-.social-list {
+.contacts-wrapper {
   margin-bottom: 60px;
 }
 

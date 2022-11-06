@@ -6,12 +6,12 @@
 
 .footer__contacts {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .address {
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .address-list__item:not(:last-child) {
@@ -35,7 +35,7 @@
   color: var(--bg-page-color);
 }
 
-.social-list {
+.contacts-wrapper {
   margin-bottom: 60px;
 }
 
@@ -46,9 +46,8 @@
 @media screen and (min-width: 768px) {
   .contacts-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
-    padding: 0 61px;
   }
 }
 
@@ -69,6 +68,7 @@
   }
 
   .footer__contacts {
+    flex-grow: 1;
     text-align: left;
   }
 }

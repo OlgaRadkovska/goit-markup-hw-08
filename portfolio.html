@@ -38,13 +38,18 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-button" data-menu-open>
+        <button
+          type="button"
+          class="mobile-menu-button"
+          aria-label="перемикач мобільного меню"
+          data-menu-open
+        >
           <svg
             class="menu-button__icon"
             width="40"
             height="40"
-            aria-label="перемикач мобільного меню"
-            aria-expanded="faulse"
+            aria-expanded="false"
+            role="button"
           >
             <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           </svg>
@@ -80,65 +85,64 @@
       </div>
       <div class="mobile-menu" data-menu>
         <!-- is-open -->
-        <div class="container">
-          <div class="mobile-menu__container">
-            <button class="mobile-menu__close-btn" data-menu-close>
-              <svg
-                class="mobile-menu__close-icon"
-                width="40"
-                height="40"
-                aria-label="закриття мобільного меню"
+
+        <div class="mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg
+              class="mobile-menu__close-icon"
+              width="40"
+              height="40"
+              aria-label="закриття мобільного меню"
+            >
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__menu">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link_active" href="#"
+                >Портфоліо</a
               >
-                <use href="./images/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-            <ul class="mobile-menu__menu">
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="./index.html">Студія</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link mobile-menu__link_active" href="#"
-                  >Портфоліо</a
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile-menu__contacts-wrapper">
+            <ul class="mobile-menu_contact-list">
+              <li class="mobile-menu__contact-phone">
+                <a
+                  class="mobile-menu__contact-phone-link"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
                 >
               </li>
-              <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">Контакти</a>
+              <li class="mobile-menu__contact-mail">
+                <a
+                  class="mobile-menu__contact-mail-link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
               </li>
             </ul>
-            <div class="mobile-menu__contacts-wrapper">
-              <ul class="mobile-menu_contact-list">
-                <li class="mobile-menu__contact-phone">
-                  <a
-                    class="mobile-menu__contact-phone-link"
-                    href="tel:+380961111111"
-                  >
-                    +38 096 111 11 11</a
-                  >
-                </li>
-                <li class="mobile-menu__contact-mail">
-                  <a
-                    class="mobile-menu__contact-mail-link"
-                    href="mailto:info@devstudio.com"
-                  >
-                    info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-              <ul class="mobile-menu__social-list">
-                <li class="mobile-menu__social-item">
-                  <a href="#" class="mobile-menu__social-link">Instagram</a>
-                </li>
-                <li class="mobile-menu__social-item">
-                  <a href="#" class="mobile-menu__social-link">Twitter</a>
-                </li>
-                <li class="mobile-menu__social-item">
-                  <a href="#" class="mobile-menu__social-link">Facebook</a>
-                </li>
-                <li class="mobile-menu__social-item">
-                  <a href="#" class="mobile-menu__social-link">Linkedin</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="mobile-menu__social-list">
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Linkedin</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -622,7 +626,6 @@
                     class="social-list__icon_footer"
                     width="20"
                     height="20"
-                    area-lable="instagram"
                     lang="en"
                   >
                     <use href="./images/sprite.svg#icon-instagram"></use>
@@ -635,7 +638,6 @@
                     class="social-list__icon_footer"
                     width="20"
                     height="20"
-                    area-lable="twitter"
                     lang="en"
                   >
                     <use href="./images/sprite.svg#icon-twitter"></use>
@@ -648,7 +650,6 @@
                     class="social-list__icon_footer"
                     width="20"
                     height="20"
-                    area-lable="facebook"
                     lang="en"
                   >
                     <use href="./images/sprite.svg#icon-facebook"></use>
@@ -661,7 +662,6 @@
                     class="social-list__icon_footer"
                     width="20"
                     height="20"
-                    area-lable="linkedin"
                     lang="en"
                   >
                     <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -673,7 +673,7 @@
         </div>
         <form class="mailing-form">
           <label class="mailing-form__field">
-            <p class="mailing-form__capture">Підпишіться на розсилку</p>
+            <span class="mailing-form__capture">Підпишіться на розсилку</span>
             <input
               type="email"
               class="mailing-form__input"
